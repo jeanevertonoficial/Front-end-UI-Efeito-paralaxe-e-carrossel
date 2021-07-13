@@ -1,0 +1,16 @@
+.produto {
+    display: flex;
+
+    height: calc(100vh - 4.25rem); /* calculando a altura do view-port - a altura do cabeçalho*/
+}   
+
+.produto__foto {
+    width: 40%;
+    height: 100%;
+
+    background-image: url(../img/produto-capa.png);
+    background-attachment: fixed; /* a imagem fica grudada no fundo*/
+    background-size: 49rem;
+    background-position:-22% top;
+    background-repeat: no-repeat;
+}
