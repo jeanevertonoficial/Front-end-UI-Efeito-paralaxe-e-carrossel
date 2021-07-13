@@ -9,9 +9,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/cabecalho.css">
     
 </head>
 <body>  
-    <h1 style="color: var(--chumbo);">Ola Gatito</h1>
-</body>
+   <!-- CONSTRUINDO O CABEÇALHO COM EMMIT
+        header.cabecalho.container>(.cabecalho__divisao>img.cabecalho__logo+h1.cabecalho__titulo{gatito})+nav>ul.cabecalho__navegacao>li.cabecalho__item*4>a[href="#"] 
+   -->
+        <header class="cabecalho container">
+            <div class="cabecalho__divisao">
+                <img src="assets/img/logo.svg" alt="Logo gatito" class="cabecalho__logo">
+                <h1 class="cabecalho__titulo">gatito</h1>
+            </div>
+            <nav>
+                <ul class="cabecalho__navegacao">
+                    <li class="cabecalho__item cabecalho__item--ativo"><a href="#">home</a></li>
+                    <li class="cabecalho__item"><a href="#">sobre</a></li>
+                    <li class="cabecalho__item"><a href="#">contato</a></li>
+                    <li class="cabecalho__item"><a href="#" aria-label="busca"><img src="assets/img/icon2.svg" alt="icone-lupa"></a></li>
+                </ul>
+            </nav>
+        </header>
+    </body>
 </html>
