@@ -49,3 +49,46 @@
 
   margin-bottom: 2.5rem;
 }
+
+.produto__nome {
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.875rem;
+
+  width: 31.875rem;
+
+  margin-bottom: 0.875rem;
+}
+
+.produto__texto {
+  width: 31.875rem;
+
+  letter-spacing: 0.125rem;
+  line-height: 1.25rem;
+
+  margin-bottom: 1rem;
+}
+
+.produto__comprar {
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+
+    border: none;
+
+    color: var(--branco);
+    font-weight: 900;
+    letter-spacing: 0.25rem;
+    font-family: inherit; /*pega da fonte mãe declarada */
+    text-transform: uppercase;
+
+    border-radius: 35px;
+    background-color: var(--rosa-claro);
+
+    min-width: 10.75rem; /* tamanho minimo do botão */
+
+    padding: 1.25rem 1rem; 
+
+    box-sizing: border-box;
+  
+}
