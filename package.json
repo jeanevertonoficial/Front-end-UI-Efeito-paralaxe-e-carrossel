@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "jetifier": "^2.0.0"
+  },
+  "dependencies": {
+    "brower": "^0.0.2",
+    "sync": "^0.2.5"
   }
 }

@@ -1,36 +1,51 @@
 .produto {
-    display: flex;
+  display: flex;
 
-    height: calc(100vh - 4.25rem); /* calculando a altura do view-port - a altura do cabeçalho*/
-}   
+  height: calc(
+    100vh - 4.25rem
+  ); /* calculando a altura do view-port - a altura do cabeçalho*/
+}
 
 .produto__foto {
-    width: 40%;
-    height: 100%;
+  width: 40%;
+  height: 100%;
 
-    background-image: url(../img/produto-capa.png);
-    background-attachment: fixed; /* a imagem fica grudada no fundo*/
-    background-size: 49rem;
-    background-position:-22% top;
-    background-repeat: no-repeat;
+  background-image: url(../img/produto-capa.png);
+  background-attachment: fixed; /* a imagem fica grudada no fundo*/
+  background-size: 49rem;
+  background-position: -22% top;
+  background-repeat: no-repeat;
 }
 
 .produto__descricao {
-    width: 60%;
+  width: 60%;
 
-    padding-top: 3rem;
+  padding-top: 3rem;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-
-    color: var(--cinza);
+  color: var(--cinza);
 }
 
 .produto__marca {
-    text-transform: uppercase; /* deixa o texto sempre maiusculo*/
-    font-size: 11.5rem; /* tamanho da fonte */
-    font-weight: 800; /* peso da fonte */
-    color: var(--rosa); /* cor do texto */
-    letter-spacing: 0.5rem; /* espaço entre letras */
-    line-height: 9rem; /* altura do preço */
+  text-transform: uppercase; /* deixa o texto sempre maiusculo*/
+  font-size: 11.5rem; /* tamanho da fonte */
+  font-weight: 800; /* peso da fonte */
+  color: var(--rosa); /* cor do texto */
+  letter-spacing: 0.5rem; /* espaço entre letras */
+  line-height: 9rem; /* altura do preço */
+}
+
+.produto__divisao {
+  padding-left: 1rem;
+
+  position: relative;
+}
+
+.produto__preco {
+  font-size: 1.375rem;
+  font-weight: 800;
+  letter-spacing: 0.125rem;
+
+  margin-bottom: 2.5rem;
 }
