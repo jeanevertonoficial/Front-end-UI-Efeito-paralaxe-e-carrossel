@@ -14,3 +14,23 @@
     background-position:-22% top;
     background-repeat: no-repeat;
 }
+
+.produto__descricao {
+    width: 60%;
+
+    padding-top: 3rem;
+
+    box-sizing: border-box;
+
+
+    color: var(--cinza);
+}
+
+.produto__marca {
+    text-transform: uppercase; /* deixa o texto sempre maiusculo*/
+    font-size: 11.5rem; /* tamanho da fonte */
+    font-weight: 800; /* peso da fonte */
+    color: var(--rosa); /* cor do texto */
+    letter-spacing: 0.5rem; /* espaço entre letras */
+    line-height: 9rem; /* altura do preço */
+}
