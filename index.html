@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/cabecalho.css">
     <link rel="stylesheet" href="assets/css/produto.css">
     <link rel="stylesheet" href="assets/css/outros-produtos.css">
+    <link rel="stylesheet" href="assets/css/carrossel.css">
 </head>
 
 <body>
@@ -79,7 +80,7 @@
 
             <article class="carrossel">
                 <button class="carrossel__botao carrossel__botao--anterior" aria-label="Botão de voltar"></button>
-                <button class="carrossel__botao carrosssel__botao--proximo" aria-label="Botão de avançar"></button>
+                <button class="carrossel__botao carrossel__botao--proximo" aria-label="Botão de avançar"></button>
                 <ul class="carrossel__lista-produtos">
                     <a href="#" class="carrossel__produto">
                         <li class="carrossel__imagem-container"><img src="assets/img/produto1.png" alt="imagem"
@@ -98,8 +99,8 @@
                                 class="carrossel__imagem"></li>
                     </a>
                 </ul>
-                <div class="carrossel__indicador">
-                    <button class="carrossel__indicador" aria-label="Slide 1"></button>
+                <div class="carrossel__indicadores">
+                    <button class="carrossel__indicador carrossel__indicador--ativo " aria-label="Slide 1"></button>
                     <button class="carrossel__indicador" aria-label="Slide 2"></button>
                     <button class="carrossel__indicador" aria-label="Slide 3"></button>
                     <button class="carrossel__indicador" aria-label="Slide 4"></button>
@@ -108,6 +109,7 @@
             </article>
         </section>
     </main>
+    <script src="assets/js/index.js" type="module"></script>
 </body>
 
 </html>
