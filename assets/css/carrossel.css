@@ -54,6 +54,8 @@
   position: relative;
 
   height: 100%;
+
+  transition: transform .55s;
 }
 
 .carrossel__produto {
