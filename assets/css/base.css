@@ -10,7 +10,7 @@ html {
 
 body {
     font-family: 'Overpass', 'san-serif';
-    perspective: 1px;
+    perspective: 2px;
 
     height: 100%;
 

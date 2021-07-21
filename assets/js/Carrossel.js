@@ -7,7 +7,7 @@ export class Carrossel {
 
     this.slides = this.getListaSlides();
     this.indicadores = this.getListaIndicadores();
-    this.tamanhoSlide = this.gettamanhoSlide();
+    this.tamanhoSlide = this.getTamanhoSlide();
 
     this.indiceDoSlideAtual = 0;
 
@@ -26,7 +26,7 @@ export class Carrossel {
     return Array.from(this.navegacao.children);
   }
   //função que pega o tamanho da imagem
-  gettamanhoSlide() {
+  getTamanhoSlide() {
     return this.slides[0].getBoundingClientRect().width;
   }
 
@@ -61,17 +61,14 @@ export class Carrossel {
     const indicadorSeleciondado = this.getIndiceAtual();
 
     this.scrollParaSlide(this.getSlideAtual());
-    this.atualizaIndecadores(
-      indicadorAtual,
-      indicadorSeleciondado
-    ); 
+    this.atualizaIndicadores(indicadorAtual,indicadorSeleciondado); 
   }
 
   scrollParaSlide(slideSelecionado) {
-    this.listaProdutos.style.transform = "translateX(-" + slideSelecionado.style.left + ")";
+    this.listaProdutos.style.transform = "translateX(-" + slideSelecionado.style.left + ")"
   }
 
-  atualizaIndecadores(indicadorAtual, indicadorSelecionado) {
+  atualizaIndicadores(indicadorAtual, indicadorSelecionado) {
     indicadorAtual.classList.remove("carrossel__indicador--ativo");
     indicadorSelecionado.classList.add("carrossel__indicador--ativo");
   }
@@ -79,7 +76,7 @@ export class Carrossel {
   pularParaSlide(evento) {
     if (evento.target === evento.currentTarget) return;
 
-    const indicadorSelecionado = evento.target.getAttribute 
+    const indicadorSelecionado = evento.target.getAttribute("data-indicador"); // indicador inferior 
     this.vaParaSlide(parseInt(indicadorSelecionado));
   }
 

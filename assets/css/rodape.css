@@ -1,0 +1,40 @@
+/*ESPAÇOS E AJUSTE RODAPE*/
+.rodape {
+    background-color: var(--branco);
+
+    width: 100%;
+    height: 5rem;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between; /*divide e separa as divs*/
+    align-items: center;
+
+    color: var(--rosa);
+    letter-spacing: .25rem; /* espaço entre as letras*/
+
+}
+/*DIVIDINDO A O LOGO DO NOME*/
+.rodape__divisao {
+    display: flex;
+    align-items: center;
+}
+/*TAMANHO DA LOGO*/
+.rodape__logo {
+    width: 2rem;
+
+    margin-right: .4rem;
+}
+
+.rodape__titulo{
+    text-transform: uppercase;
+}
+
+.rodape__navegacao {
+    display: flex;
+    align-items: center;
+}
+/*espaço entre sobre e contato*/
+.rodape__item {
+    margin-left: 3.75rem;
+}
