@@ -4,6 +4,8 @@
   height: calc(
     100vh - 4.25rem
   ); /* calculando a altura do view-port - a altura do cabeçalho*/
+
+  overflow: hidden;
 }
 
 .produto__foto {
@@ -11,10 +13,13 @@
   height: 100%;
 
   background-image: url(../img/produto-capa.png);
-  background-attachment: fixed; /* a imagem fica grudada no fundo*/
-  background-size: 49rem;
-  background-position: -22% top;
+ /* background-attachment: fixed; /* a imagem fica grudada no fundo*/
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  transform: translateZ(-1px) translateX(-75, 25%) scale(2.6);
+
+  z-index: -1;
 }
 
 .produto__descricao {
@@ -25,6 +30,8 @@
   box-sizing: border-box;
 
   color: var(--cinza);
+
+  background-color: var(--branco);
 }
 
 .produto__marca {
